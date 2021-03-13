@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Demo Cart App Regresiion Test Suite]" parallel="tests">
+  <test thread-count="3" verbose="3" name="ProductInfo Page Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.test.ProductInfoPageTest">
+        <methods>
+          <include name="quantityTest"/>
+          <include name="setUp"/>
+          <include name="productInfoSetup"/>
+          <include name="productInfoTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.ProductInfoPageTest -->
+    </classes>
+  </test> <!-- ProductInfo Page Test(failed) -->
+  <test thread-count="3" verbose="3" name="Accounts Page Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.test.AccountsPageTest">
+        <methods>
+          <include name="AccSetUp"/>
+          <include name="selectProductTest"/>
+          <include name="accPageSectionsTest"/>
+          <include name="accPageTitletest"/>
+          <include name="setUp"/>
+          <include name="search"/>
+          <include name="accPageLogoTest"/>
+          <include name="accPageSectionCountTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.AccountsPageTest -->
+    </classes>
+  </test> <!-- Accounts Page Test(failed) -->
+</suite> <!-- Failed suite [Demo Cart App Regresiion Test Suite] -->
